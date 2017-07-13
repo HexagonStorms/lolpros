@@ -1,12 +1,21 @@
 // Variables
 @import "variables";
-
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
 /* ----------------------------------------------------------------- */
 /* GLOBAL */
 /* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* NAV */
+/* ----------------------------------------------------------------- */
+.navBar {
+  background: black;
+  height: 150px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding-top: 30px;
+}
 
 body {
   // background: blue;
