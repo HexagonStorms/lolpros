@@ -8,16 +8,22 @@
         <title>Lol Streamers</title>
     </head>
     <body ng-app="myApp" ng-controller="appCtrl as ac">
-        <nav class="navBar">
+        <nav class="navbar">
             <span>LoL Streamers</span>
             <!-- Large "nav" -->
         </nav>
-        <div>
+        <section>
             <!-- Filter Div -->
-        </div>
-        <div>
-            <!-- ng-repeat div
-        </div>
+        </section>
+        <section class="player-section">
+            <div class="row">
+                <div class="player-box col-md-3 text-center">
+                    <div class="player-name">Faker</div>
+                    <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" />
+                    <img class="team-logo" src="https://files.stage.gg/teamlogos/ALL/500px/lck-sktelecom-t1-500.png" />
+                </div>
+            </div>
+        </section>
         <footer>
             <!-- footer -->
         </footer>

@@ -1,14 +1,17 @@
 // Variables
-@import "variables";
-// Bootstrap
+@import "variables"; // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 /* ----------------------------------------------------------------- */
 /* GLOBAL */
 /* ----------------------------------------------------------------- */
+body {
+  background: black;
+  color: white;
+}
 /* ----------------------------------------------------------------- */
 /* NAV */
 /* ----------------------------------------------------------------- */
-.navBar {
+.navbar {
   background: black;
   height: 150px;
   text-align: center;
@@ -16,7 +19,26 @@
   color: white;
   padding-top: 30px;
 }
+/* ----------------------------------------------------------------- */
+/* PLAYER */
+/* ----------------------------------------------------------------- */
+.player-name {
+  font-size: 3em;
+}
 
-body {
-  // background: blue;
+.player-box {
+  position: relative;
+  border: 1px solid green;
+}
+
+.player-img {
+  width: 300px;
+}
+
+.team-logo {
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  right: 3px;
+  z-index: -1;
 }
