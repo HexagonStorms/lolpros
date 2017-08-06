@@ -7,9 +7,9 @@
         <link rel="stylesheet" type="text/css" href="/css/app.css" />
         <title>Lol Streamers</title>
     </head>
-    <body ng-app="myApp" ng-controller="appCtrl as ac">
+    <body ng-app="myApp" ng-controller="appCtrl as ac" class="container-fluid">
         <nav class="navbar">
-            <span>LoL Streamers</span>
+            <span>LoL Pros Online</span>
             <!-- Large "nav" -->
         </nav>
         <section>
@@ -17,9 +17,31 @@
         </section>
         <section class="player-section">
             <div class="row">
-                <div class="player-box col-md-3 text-center">
-                    <div class="player-name">Faker</div>
-                    <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" />
+                <div class="player-box col-md-3">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="player-name">FAKER</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>NAME</h4>
+                            <h5>Sanghyeok Lee</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>POSITION</h4>
+                            <h5>Mid</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>LEAGUE</h4>
+                            <h5>LCK</h5>
+                        </div>
+                    </div>
+                    <!-- <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" /> -->
                     <img class="team-logo" src="https://files.stage.gg/teamlogos/ALL/500px/lck-sktelecom-t1-500.png" />
                 </div>
             </div>
