@@ -17,31 +17,29 @@
         </section>
         <section class="player-section">
             <div class="row">
-                <div class="player-box col-md-3">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h2 class="player-name">FAKER</h2>
+                <div class="player-box text-center col-md-3">
+                    <h2 class="player-name">FAKER</h2>
+                    <div class="player-info text-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>NAME</h4>
+                                <h5>Sanghyeok Lee</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>POSITION</h4>
+                                <h5>Mid</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>LEAGUE</h4>
+                                <h5>LCK</h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>NAME</h4>
-                            <h5>Sanghyeok Lee</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>POSITION</h4>
-                            <h5>Mid</h5>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4>LEAGUE</h4>
-                            <h5>LCK</h5>
-                        </div>
-                    </div>
-                    <!-- <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" /> -->
+                    <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" />
                     <img class="team-logo" src="https://files.stage.gg/teamlogos/ALL/500px/lck-sktelecom-t1-500.png" />
                 </div>
             </div>

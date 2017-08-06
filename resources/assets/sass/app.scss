@@ -24,21 +24,21 @@ body {
 /* ----------------------------------------------------------------- */
 .player-name {
   font-size: 3em;
+  margin-bottom: 0;
 }
-
+.player-info {
+  position: absolute;
+}
 .player-box {
   position: relative;
-  border: 1px solid green;
 }
 
 .player-img {
-  width: 300px;
+  width: 250px;
 }
-
 .team-logo {
-  width: 150px;
+  width: 200px;
   position: absolute;
-  top: 35px;
-  right: 3px;
+  right: 0;
   z-index: -1;
 }
