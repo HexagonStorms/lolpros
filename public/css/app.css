@@ -7696,6 +7696,9 @@ body {
 .player-name {
   font-size: 3em;
   margin-bottom: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-top: 5px;
+  letter-spacing: 3px;
 }
 
 .player-info {
@@ -7705,7 +7708,7 @@ body {
 
 .player-box {
   position: relative;
-  background: #1f1f1f;
+  background: #383838;
   border-radius: 1em;
 }
 
