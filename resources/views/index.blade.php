@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="/css/app.css" />
         <title>Lol Streamers</title>
     </head>
-    <body ng-app="myApp" ng-controller="appCtrl as ac" class="container-fluid">
+    <body ng-app="myApp" ng-controller="appCtrl as ac" class="container">
         <nav class="navbar">
             <span>LoL Pros Online</span>
             <!-- Large "nav" -->
@@ -22,25 +22,29 @@
                     <div class="player-info text-left">
                         <div class="row">
                             <div class="col-md-12">
-                                <h4>NAME</h4>
-                                <h5>Sanghyeok Lee</h5>
+                                <h4 class="info-title">NAME</h4>
+                                <h5 class="info-content">Sanghyeok Lee</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <h4>POSITION</h4>
-                                <h5>Mid</h5>
+                                <h4 class="info-title">POSITION</h4>
+                                <h5 class="info-content">Mid</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <h4>LEAGUE</h4>
-                                <h5>LCK</h5>
+                                <h4 class="info-title">LEAGUE</h4>
+                                <h5 class="info-content">LCK</h5>
                             </div>
                         </div>
                     </div>
                     <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" />
                     <img class="team-logo" src="https://files.stage.gg/teamlogos/ALL/500px/lck-sktelecom-t1-500.png" />
+                    <div class="online-light">
+                        <div class="dot"></div>
+                        <div class="pulse"></div>
+                    </div>
                 </div>
             </div>
         </section>
