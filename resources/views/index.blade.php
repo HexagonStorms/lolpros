@@ -42,7 +42,7 @@
                     </div>
                     <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" />
                     <img class="team-logo" src="https://files.stage.gg/teamlogos/ALL/500px/lck-sktelecom-t1-500.png" />
-                    <div class="online-light">
+                    <div class="online-light" tooltip-placement="top" uib-tooltip="Online now!">
                         <div class="dot"></div>
                         <div class="pulse"></div>
                     </div>
@@ -54,7 +54,8 @@
         </footer>
         <script src="/js/angular.min.js"></script>
         <script src="/js/angular-animate.min.js"></script>
-        <script src="/js/ui-bootstrap-2.5.0.min.js"></script>
+        <script src="/js/angular-touch.min.js"></script>
+        <script src="/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
         <script src="/js/app.js"></script>
     </body>
 </html>
