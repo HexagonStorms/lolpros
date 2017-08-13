@@ -13,7 +13,7 @@ class EssentialTables extends Migration
      */
     public function up()
     {
-        Schema::create('lol_players', function (Blueprint $table) {
+        Schema::create('players', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('team_id')->unsigned();
             $table->integer('position_id')->unsigned();
@@ -26,7 +26,7 @@ class EssentialTables extends Migration
             $table->softDeletes();
         });
 
-        Schema::create('lol_teams', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('acronym');
@@ -43,7 +43,7 @@ class EssentialTables extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lol_players');
-        Schema::dropIfExists('lol_teams');
+        Schema::dropIfExists('players');
+        Schema::dropIfExists('teams');
     }
 }
