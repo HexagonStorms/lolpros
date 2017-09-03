@@ -11,7 +11,6 @@ class Player extends Model
     const POSITION_MID = 3;
     const POSITION_ADC = 4;
     const POSITION_SUPPORT = 5;
-    const POSITION_SUB = 6;
     const POSITION_COACH = 7;
     
     public static $POSITIONS = array(
