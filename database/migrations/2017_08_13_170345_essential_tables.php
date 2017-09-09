@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use App\Team;
 
 class EssentialTables extends Migration
 {
@@ -15,8 +16,8 @@ class EssentialTables extends Migration
     {
         Schema::create('players', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('team_id')->unsigned();
-            $table->integer('position_id')->unsigned();
+            $table->integer('team')->unsigned();
+            $table->integer('position')->unsigned();
             $table->string('handle');
             $table->string('first_name');
             $table->string('last_name');
@@ -35,10 +36,52 @@ class EssentialTables extends Migration
             $table->string('name');
             $table->string('acronym');
             $table->string('logo')->nullable();
-            $table->integer('region_id')->unsigned();
+            $table->integer('region')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
+        
+        // Insert Data
+        
+        // Teams
+        
+        $teams = [
+            [
+                'acronym' => 'TSM',
+                'name' => 'Team Solo Mid',
+                'logo' => '',
+                'region' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
+                'acronym' => 'IMT',
+                'name' => 'Immortals',
+                'logo' => '',
+                'region' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ]
+        ];
+        Team::insert($teams);
+        
+        // Players
+        // $players = [
+        //     [
+        //         'handle' => '',
+        //         'position' => '',
+        //         'first_name' => '',
+        //         'last_name' => '',
+        //         'birthplace' => '',
+        //         'twitch_username' => '',
+        //         'team' => '',
+        //         'image' => '',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //     ],
+            
+        // ];
+        
     }
 
     /**
