@@ -20,7 +20,7 @@ class Team extends Model
 	const REGION_LCL = 12;
 	const REGION_OPL = 13;
 	
-	public static $POSITIONS = array(
+	public static $REGIONS = array(
 		array(
 			'id' => self::REGION_NA, 
 			'name' => 'League of Legends Championship Series', 

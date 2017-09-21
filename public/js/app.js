@@ -1,7 +1,7 @@
-var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate']);
-app.controller('appCtrl', [ function() {
+app.controller('appCtrl', function(mainFactory) {
   var vm = this;
-  console.log('the controller has loaded!');
-
+  vm.data = mainFactory.setData();
   
-}]);
+  mainFactory.getData();
+  
+});

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="/css/app.css" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700i" rel="stylesheet">
-        <title>Lol Streamers</title>
+        <title>Lol Pros Online</title>
     </head>
     <body ng-app="myApp" ng-controller="appCtrl as ac" class="container">
         <nav class="navbar">
@@ -56,6 +56,7 @@
         <script src="/js/angular-animate.min.js"></script>
         <script src="/js/angular-touch.min.js"></script>
         <script src="/js/ui-bootstrap-tpls-2.5.0.min.js"></script>
+        <script src="/js/factory.js"></script>
         <script src="/js/app.js"></script>
     </body>
 </html>
