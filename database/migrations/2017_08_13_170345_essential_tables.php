@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use App\Team;
+use App\Player;
 
 class EssentialTables extends Migration
 {
@@ -66,22 +67,69 @@ class EssentialTables extends Migration
         Team::insert($teams);
         
         // Players
-        // $players = [
-        //     [
-        //         'handle' => '',
-        //         'position' => '',
-        //         'first_name' => '',
-        //         'last_name' => '',
-        //         'birthplace' => '',
-        //         'twitch_username' => '',
-        //         'team' => '',
-        //         'image' => '',
-        //         'sub' => 0,
-        //         'retired' => 0,
-        //     ],
-            
-        // ];
-        
+        $players = [
+            [
+                'handle' => 'hauntzer',
+                'position' => 1,
+                'first_name' => 'Kevin',
+                'last_name' => 'Yarnell',
+                'birthplace' => 'USA',
+                'twitch_username' => 'tsm_hauntzer',
+                'team' => 1,
+                'image' => '/img/players/hauntzer.png',
+                'sub' => 0,
+                'retired' => 0,
+            ],
+            [
+                'handle' => 'svenskeren',
+                'position' => 2,
+                'first_name' => 'Dennis',
+                'last_name' => 'Johnsen',
+                'birthplace' => 'Denmark',
+                'twitch_username' => 'tsm_svenkeren',
+                'team' => 1,
+                'image' => '/img/players/svenkeren.png',
+                'sub' => 0,
+                'retired' => 0,
+            ],
+            [
+                'handle' => 'bjergsen',
+                'position' => 3,
+                'first_name' => 'Søren',
+                'last_name' => 'Bjerg',
+                'birthplace' => 'Denmark',
+                'twitch_username' => 'tsm_bjergsen',
+                'team' => 1,
+                'image' => '/img/players/bjergsen.png',
+                'sub' => 0,
+                'retired' => 0,
+            ],
+            [
+                'handle' => 'doublelift',
+                'position' => 4,
+                'first_name' => 'Yiliang',
+                'last_name' => 'Peng',
+                'birthplace' => 'USA',
+                'twitch_username' => 'tsm_doublelift',
+                'team' => 1,
+                'image' => '/img/players/doublelift.png',
+                'sub' => 0,
+                'retired' => 0,
+            ],
+            [
+                'handle' => 'biofrost',
+                'position' => 5,
+                'first_name' => 'Vincent',
+                'last_name' => 'Wang',
+                'birthplace' => 'Canada',
+                'twitch_username' => 'tsm_biofrost',
+                'team' => 1,
+                'image' => '/img/players/biofrost.png',
+                'sub' => 0,
+                'retired' => 0,
+            ]
+        ];
+        Player::insert($players);
     }
 
     /**
