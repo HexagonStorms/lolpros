@@ -17,7 +17,7 @@ class EssentialTables extends Migration
     {
         Schema::create('players', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('team')->unsigned();
+            $table->integer('team_id')->unsigned();
             $table->integer('position')->unsigned();
             $table->string('handle');
             $table->string('first_name');
@@ -37,7 +37,7 @@ class EssentialTables extends Migration
             $table->string('name');
             $table->string('acronym');
             $table->string('logo')->nullable();
-            $table->integer('region')->unsigned();
+            $table->integer('region_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -51,7 +51,7 @@ class EssentialTables extends Migration
                 'acronym' => 'TSM',
                 'name' => 'Team Solo Mid',
                 'logo' => '',
-                'region' => 1,
+                'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ],
@@ -59,7 +59,7 @@ class EssentialTables extends Migration
                 'acronym' => 'IMT',
                 'name' => 'Immortals',
                 'logo' => '',
-                'region' => 1,
+                'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]
@@ -75,7 +75,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Yarnell',
                 'birthplace' => 'USA',
                 'twitch_username' => 'tsm_hauntzer',
-                'team' => 1,
+                'team_id' => 1,
                 'image' => '/img/players/hauntzer.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -87,7 +87,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Johnsen',
                 'birthplace' => 'Denmark',
                 'twitch_username' => 'tsm_svenkeren',
-                'team' => 1,
+                'team_id' => 1,
                 'image' => '/img/players/svenkeren.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -99,7 +99,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Bjerg',
                 'birthplace' => 'Denmark',
                 'twitch_username' => 'tsm_bjergsen',
-                'team' => 1,
+                'team_id' => 1,
                 'image' => '/img/players/bjergsen.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -111,7 +111,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Peng',
                 'birthplace' => 'USA',
                 'twitch_username' => 'tsm_doublelift',
-                'team' => 1,
+                'team_id' => 1,
                 'image' => '/img/players/doublelift.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -123,7 +123,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Wang',
                 'birthplace' => 'Canada',
                 'twitch_username' => 'tsm_biofrost',
-                'team' => 1,
+                'team_id' => 1,
                 'image' => '/img/players/biofrost.png',
                 'sub' => 0,
                 'retired' => 0,
