@@ -7710,6 +7710,7 @@ body {
   position: relative;
   background: #383838;
   border-radius: 1em;
+  margin: 1em;
 }
 
 .info-title {
