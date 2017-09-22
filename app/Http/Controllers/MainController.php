@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Team;
+use App\Player;
 
 class MainController extends Controller
 {
@@ -13,8 +14,7 @@ class MainController extends Controller
         * more options in the future to sort and get by
         * a variety of different parameters
         */
-        
-        $teams = Team::get();
-        return response()->json($teams);
+        $players = Player::with('team')->get();
+        return response()->json($players);
     }
 }
