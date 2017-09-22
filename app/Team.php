@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Team extends Model
+class Team extends BaseModel
 {
 	const REGION_NA = 1;
 	const REGION_EU = 2;

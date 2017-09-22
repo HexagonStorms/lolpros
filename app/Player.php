@@ -2,9 +2,7 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Player extends Model
+class Player extends BaseModel
 {
     const POSITION_TOP = 1;
     const POSITION_JUNGLE = 2;
@@ -21,4 +19,14 @@ class Player extends Model
     	array('id' => self::POSITION_SUPPORT, 'name' => 'Support'),
     	array('id' => self::POSITION_COACH, 'name' => 'Coach')
     );
+    
+    public function team()
+    {
+        return $this->belongsTo('App\Team');
+    }
+    
+    public function getPositionAttribute($value)
+    {
+        return self::findTypeById(self::$POSITIONS, $value);
+    }
 }
