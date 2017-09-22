@@ -1,14 +1,12 @@
-var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate']);
+var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate'], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('[[');
+    $interpolateProvider.endSymbol(']]');
+});
 app.factory('mainFactory', mainFactory)
 .factory('handler', handler)
 
 function mainFactory($http, $q, $log) {
-    var data = {
-        teams: [],
-    };
-    
     return {
-        setData: setData,
         getData: getData,
     };
     
@@ -33,10 +31,7 @@ function mainFactory($http, $q, $log) {
     }
     
     function getData() {
-        return http('get', 'get-data')
-        .then(function(response) {
-            console.log(response);
-        }); 
+        return http('get', 'get-data');
     }
 }
 

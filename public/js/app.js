@@ -1,7 +1,9 @@
-app.controller('appCtrl', function(mainFactory) {
-  var vm = this;
-  vm.data = mainFactory.setData();
+app.controller('appCtrl', function(mainFactory, $scope) {
   
-  mainFactory.getData();
+    mainFactory.getData()
+    .then(function(response) {
+        $scope.players = response.data;
+        console.log($scope.players);
+    });
   
 });

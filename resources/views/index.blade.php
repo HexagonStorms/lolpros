@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700i" rel="stylesheet">
         <title>Lol Pros Online</title>
     </head>
-    <body ng-app="myApp" ng-controller="appCtrl as ac" class="container">
+    <body ng-app="myApp" ng-controller="appCtrl" class="container">
         <nav class="navbar">
             <span>LoL Pros Online</span>
             <!-- Large "nav" -->
@@ -18,13 +18,13 @@
         </section>
         <section class="player-section">
             <div class="row">
-                <div class="player-box text-center col-md-3">
-                    <h2 class="player-name">FAKER</h2>
+                <div ng-repeat="player in players" class="player-box text-center col-md-3">
+                    <h2 class="player-name">[[player.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="info-title">NAME</h4>
-                                <h5 class="info-content">Sanghyeok Lee</h5>
+                                <h5 class="info-content">[[player.first_name]] [[player.last_name]]</h5>
                             </div>
                         </div>
                         <div class="row">
