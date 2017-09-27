@@ -15,6 +15,6 @@ class MainController extends Controller
         * a variety of different parameters
         */
         $players = Player::with('team')->get();
-        return response()->json($players);
+        return response()->json(['players' => $players, 'key' => env('TWITCH_API_KEY')]);
     }
 }

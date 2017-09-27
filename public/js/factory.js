@@ -6,6 +6,7 @@ app.factory('mainFactory', mainFactory)
 .factory('handler', handler)
 
 function mainFactory($http, $q, $log) {
+    
     return {
         getData: getData,
     };
@@ -14,12 +15,14 @@ function mainFactory($http, $q, $log) {
         return data;
     }
     
-    function http(method, url, data = null) {
+    function http(method, url, headers = null, data = null, ) {
         var defer = $q.defer();
         content = {
             method: method, 
-            url: url, 
-            data: data
+            url: url,
+            headers: headers,
+            data: data,
+            
         };
         $http(content).then(function(response) {
             defer.resolve(response);
@@ -31,7 +34,26 @@ function mainFactory($http, $q, $log) {
     }
     
     function getData() {
-        return http('get', 'get-data');
+        return http('get', 'get-data')
+        .then(function(response) {           
+           getActiveStreams(response.data.key, response.data.players);
+           return response;
+        });
+    }
+    
+    function getActiveStreams(key, players) {
+        // foreach function 
+        // var players = foreach loop to concat &user_login=
+        
+        // var list = "?";
+       
+        
+        
+        // headers = {
+        //     "Client-ID":key
+        // };
+        
+        // return http('get', 'https://api.twitch.tv/helix/streams?' + players, headers);
     }
 }
 
