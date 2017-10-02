@@ -72,13 +72,23 @@ class getIds extends Command
           $this->error("cURL Error #:" . $err);
         }
         $response = json_decode($response, true);
+        $twitchCount = count($response['data']);
                 
-        $this->info('Retrieved User IDs for ' . count($response['data']) . ' players');
+        $this->info('Retrieved User IDs for ' . $twitchCount . ' players');
         
         foreach($response['data'] as $user) {
             $player = Player::where('twitch_username', $user['login'])->first();
             $player->twitch_user_id = $user['id'];
             $player->save();
+        }
+        
+        if ($twitchCount != $count) {
+            $difference = $count - $twitchCount;
+            $this->error($difference . ' player ID(s) could not be found. Here they are:');
+            $players = Player::where('twitch_user_id', null)->get();
+            foreach($players as $player) {
+                $this->line($player->handle . ': ' . $player->twitch_username);
+            }
         }
     }
 }
