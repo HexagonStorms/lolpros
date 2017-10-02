@@ -72,13 +72,13 @@ class getIds extends Command
           $this->error("cURL Error #:" . $err);
         }
         $response = json_decode($response, true);
-        $this->info('Retrieved User IDs for ' . count($response) . ' players');
+                
+        $this->info('Retrieved User IDs for ' . count($response['data']) . ' players');
         
-        foreach($response as $user) {
-            Log::info($user);
-            return;
+        foreach($response['data'] as $user) {
             $player = Player::where('twitch_username', $user['login'])->first();
-            $this->info($player);
+            $player->twitch_user_id = $user['id'];
+            $player->save();
         }
     }
 }
