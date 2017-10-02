@@ -40,28 +40,6 @@ function mainFactory($http, $q, $log) {
            return response;
         });
     }
-    
-    function getActiveStreams(key, players) {
-        // foreach function 
-        // var players = foreach loop to concat &user_login=
-        
-        // var list = "?";
-        var list = '?';
-        for (var i = 0; i < players.length; i++) {
-            list = list + '&user_login=' + players[i].stream_username;
-            // TODO cycle and send the request every 100 iterations.
-            // This logic should be a promise because this call can have the potential to clal multiple times
-        }
-        console.log(list);
-       
-        
-        
-        // headers = {
-        //     "Client-ID":key
-        // };
-        
-        // return http('get', 'https://api.twitch.tv/helix/streams?' + players, headers);
-    }
 }
 
 function handler($log) {

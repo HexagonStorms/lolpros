@@ -23,8 +23,8 @@ class EssentialTables extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('birthplace')->nullable();
-            $table->string('stream_username')->nullable();
-            $table->integer('stream_user_id')->nullable();
+            $table->string('twitch_username')->nullable();
+            $table->integer('twitch_user_id')->nullable();
             $table->string('image')->nullable();
             $table->boolean('sub')->default(0);
             $table->boolean('retired')->default(0);
@@ -75,7 +75,7 @@ class EssentialTables extends Migration
                 'first_name' => 'Kevin',
                 'last_name' => 'Yarnell',
                 'birthplace' => 'USA',
-                'stream_username' => 'tsm_hauntzer',
+                'twitch_username' => 'tsm_hauntzer',
                 'team_id' => 1,
                 'image' => '/img/players/hauntzer.png',
                 'sub' => 0,
@@ -87,7 +87,7 @@ class EssentialTables extends Migration
                 'first_name' => 'Dennis',
                 'last_name' => 'Johnsen',
                 'birthplace' => 'Denmark',
-                'stream_username' => 'tsm_svenkeren',
+                'twitch_username' => 'tsm_svenskeren',
                 'team_id' => 1,
                 'image' => '/img/players/svenkeren.png',
                 'sub' => 0,
@@ -99,7 +99,7 @@ class EssentialTables extends Migration
                 'first_name' => 'Søren',
                 'last_name' => 'Bjerg',
                 'birthplace' => 'Denmark',
-                'stream_username' => 'tsm_bjergsen',
+                'twitch_username' => 'tsm_bjergsen',
                 'team_id' => 1,
                 'image' => '/img/players/bjergsen.png',
                 'sub' => 0,
@@ -111,7 +111,7 @@ class EssentialTables extends Migration
                 'first_name' => 'Yiliang',
                 'last_name' => 'Peng',
                 'birthplace' => 'USA',
-                'stream_username' => 'tsm_doublelift',
+                'twitch_username' => 'doublelift',
                 'team_id' => 1,
                 'image' => '/img/players/doublelift.png',
                 'sub' => 0,
@@ -123,7 +123,7 @@ class EssentialTables extends Migration
                 'first_name' => 'Vincent',
                 'last_name' => 'Wang',
                 'birthplace' => 'Canada',
-                'stream_username' => 'tsm_biofrost',
+                'twitch_username' => 'tsm_biofrost',
                 'team_id' => 1,
                 'image' => '/img/players/biofrost.png',
                 'sub' => 0,
