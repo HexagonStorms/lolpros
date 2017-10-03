@@ -34,11 +34,7 @@ function mainFactory($http, $q, $log) {
     }
     
     function getData() {
-        return http('get', 'get-data')
-        .then(function(response) {           
-           getActiveStreams(response.data.key, response.data.players);
-           return response;
-        });
+        return http('get', 'get-data');
     }
 }
 
