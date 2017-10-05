@@ -80,6 +80,8 @@ class EssentialTables extends Migration
                 'image' => '/img/players/hauntzer.png',
                 'sub' => 0,
                 'retired' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ],
             [
                 'handle' => 'svenskeren',
@@ -92,6 +94,8 @@ class EssentialTables extends Migration
                 'image' => '/img/players/svenkeren.png',
                 'sub' => 0,
                 'retired' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ],
             [
                 'handle' => 'bjergsen',
@@ -104,6 +108,8 @@ class EssentialTables extends Migration
                 'image' => '/img/players/bjergsen.png',
                 'sub' => 0,
                 'retired' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ],
             [
                 'handle' => 'doublelift',
@@ -116,6 +122,8 @@ class EssentialTables extends Migration
                 'image' => '/img/players/doublelift.png',
                 'sub' => 0,
                 'retired' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ],
             [
                 'handle' => 'biofrost',
@@ -128,6 +136,8 @@ class EssentialTables extends Migration
                 'image' => '/img/players/biofrost.png',
                 'sub' => 0,
                 'retired' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ],
             [
                 'handle' => 'dyrus',
@@ -140,6 +150,8 @@ class EssentialTables extends Migration
                 'image' => '/img/players/dyrus.png',
                 'sub' => 0,
                 'retired' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ]
         ];
         Player::insert($players);

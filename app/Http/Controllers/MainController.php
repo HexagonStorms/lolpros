@@ -41,9 +41,10 @@ class MainController extends Controller
                 if ($err) {
                     Log::info("cURL Error #:" . $err);
                 } else {
-                    // Create array of current streams
-                    // Add to $activeStreams;
-                    Log::info($response);
+                    $response = json_decode($response, TRUE);
+                    foreach($response['data'] as $stream) {
+                        $activeStreams[] = $players->where('twitch_user_id', $stream['user_id']);
+                    }
                 }
                 $list = '?';
             }
