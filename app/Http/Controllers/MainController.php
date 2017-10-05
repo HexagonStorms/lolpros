@@ -10,19 +10,17 @@ class MainController extends Controller
 {
     public function getData()
     {
-        /* DISCLAIMER:
-        * This may not always get by teams. There will be
-        * more options in the future to sort and get by
-        * a variety of different parameters
-        */
-        $players = Player::with('team')->get();
-        $list = '?';
         $i = 0;
+        $limiter = 100;
+        $list = '?';
         $activeStreams = [];
+        $players = Player::with('team')->get();
+        $count = $players->count();
+        
         foreach($players as $player) {
             $list .= 'user_id=' . $player->twitch_user_id . '&';
             $i++;
-            if ($i == 100) {
+            if ($i % $limiter == 0 || $i == $count) {
                 $curl = curl_init();
                 curl_setopt_array($curl, [
                     CURLOPT_URL => "https://api.twitch.tv/helix/streams" . $list,
@@ -47,10 +45,10 @@ class MainController extends Controller
                     // Add to $activeStreams;
                     Log::info($response);
                 }
-                $i = 0;
                 $list = '?';
             }
         }
+
         return response()->json(['players' => $players, 'activeStreams' => $activeStreams, 'key' => env('TWITCH_API_KEY')]); 
     }
 }

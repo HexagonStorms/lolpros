@@ -128,6 +128,18 @@ class EssentialTables extends Migration
                 'image' => '/img/players/biofrost.png',
                 'sub' => 0,
                 'retired' => 0,
+            ],
+            [
+                'handle' => 'dyrus',
+                'position' => 1,
+                'first_name' => 'Marcus',
+                'last_name' => 'Hill',
+                'birthplace' => 'USA',
+                'twitch_username' => 'tsm_dyrus',
+                'team_id' => 1,
+                'image' => '/img/players/dyrus.png',
+                'sub' => 0,
+                'retired' => 1,
             ]
         ];
         Player::insert($players);
