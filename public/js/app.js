@@ -2,8 +2,9 @@ app.controller('appCtrl', function(mainFactory, $scope) {
   
     mainFactory.getData()
     .then(function(response) {
-        $scope.players = response.data;
-        console.log($scope.players);
+        $scope.activeStreams = response.data.activeStreams;
+        $scope.players = response.data.players;
+        console.log($scope.activeStreams);
     });
   
 });

@@ -18,25 +18,26 @@
         </section>
         <section class="player-section">
             <div class="row">
-                <div ng-repeat="player in players" class="player-box text-center col-md-3">
-                    <h2 class="player-name">[[player.handle]]</h2>
+                <div ng-repeat="streamer in activeStreams" class="player-box text-center col-md-3">
+                    <p>hello</p>
+                    <h2 class="player-name">[[streamer.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="info-title">NAME</h4>
-                                <h5 class="info-content">[[player.first_name]] [[player.last_name]]</h5>
+                                <h5 class="info-content">[[streamer.first_name]] [[streamer.last_name]]</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="info-title">POSITION</h4>
-                                <h5 class="info-content">Mid</h5>
+                                <h5 class="info-content">[[streamer.position.name]]</h5>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="info-title">LEAGUE</h4>
-                                <h5 class="info-content">LCK</h5>
+                                <h5 class="info-content"></h5>
                             </div>
                         </div>
                     </div>

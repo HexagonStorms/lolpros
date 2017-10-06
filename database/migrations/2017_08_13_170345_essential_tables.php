@@ -63,6 +63,14 @@ class EssentialTables extends Migration
                 'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
+                'acronym' => 'FOX',
+                'name' => 'Echo Fox',
+                'logo' => '',
+                'region_id' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ]
         ];
         Team::insert($teams);
@@ -150,6 +158,20 @@ class EssentialTables extends Migration
                 'image' => '/img/players/dyrus.png',
                 'sub' => 0,
                 'retired' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
+                'handle' => 'froggen',
+                'position' => 3,
+                'first_name' => 'Henrik',
+                'last_name' => 'Hansen',
+                'birthplace' => 'Denmark',
+                'twitch_username' => 'froggen',
+                'team_id' => 1,
+                'image' => '/img/players/froggen.png',
+                'sub' => 0,
+                'retired' => 0,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]

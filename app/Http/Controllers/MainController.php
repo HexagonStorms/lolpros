@@ -42,14 +42,15 @@ class MainController extends Controller
                     Log::info("cURL Error #:" . $err);
                 } else {
                     $response = json_decode($response, TRUE);
+                    Log::info($players);
                     foreach($response['data'] as $stream) {
-                        $activeStreams[] = $players->where('twitch_user_id', $stream['user_id']);
+                        $activeStreams[] = $players->where('twitch_user_id', $stream['user_id'])->first();
                     }
                 }
                 $list = '?';
             }
         }
 
-        return response()->json(['players' => $players, 'activeStreams' => $activeStreams, 'key' => env('TWITCH_API_KEY')]); 
+        return response()->json(['players' => $players, 'activeStreams' => $activeStreams]); 
     }
 }
