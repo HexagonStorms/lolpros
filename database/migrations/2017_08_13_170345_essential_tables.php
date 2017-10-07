@@ -51,7 +51,7 @@ class EssentialTables extends Migration
             [
                 'acronym' => 'TSM',
                 'name' => 'Team Solo Mid',
-                'logo' => '',
+                'logo' => '/img/teams/tsm.png',
                 'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
@@ -59,7 +59,7 @@ class EssentialTables extends Migration
             [
                 'acronym' => 'IMT',
                 'name' => 'Immortals',
-                'logo' => '',
+                'logo' => '/img/teams/imt.png',
                 'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
@@ -67,7 +67,7 @@ class EssentialTables extends Migration
             [
                 'acronym' => 'FOX',
                 'name' => 'Echo Fox',
-                'logo' => '',
+                'logo' => '/img/teams/fox.png',
                 'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
@@ -168,7 +168,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Hansen',
                 'birthplace' => 'Denmark',
                 'twitch_username' => 'froggen',
-                'team_id' => 1,
+                'team_id' => 3,
                 'image' => '/img/players/froggen.png',
                 'sub' => 0,
                 'retired' => 0,

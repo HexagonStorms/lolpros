@@ -36,12 +36,12 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h4 class="info-title">LEAGUE</h4>
-                                <h5 class="info-content"></h5>
+                                <h5 class="info-content">[[streamer.team.region_id.acronym]]</h5>
                             </div>
                         </div>
                     </div>
-                    <img class="player-img" src="https://lolstatic-a.akamaihd.net/esports-assets/production/player/faker-euaqlz0c.png" />
-                    <img class="team-logo" src="https://files.stage.gg/teamlogos/ALL/500px/lck-sktelecom-t1-500.png" />
+                    <img class="player-img" ng-src="[[streamer.image]]" />
+                    <img class="team-logo" ng-src="[[streamer.team.logo]]" />
                     <div class="online-light" tooltip-placement="top" uib-tooltip="Online now!">
                         <div class="dot"></div>
                         <div class="pulse"></div>
