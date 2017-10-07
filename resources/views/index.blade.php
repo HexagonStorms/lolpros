@@ -19,7 +19,6 @@
         <section class="player-section">
             <div class="row">
                 <div ng-repeat="streamer in activeStreams" class="player-box text-center col-md-3">
-                    <p>hello</p>
                     <h2 class="player-name">[[streamer.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">

@@ -7699,6 +7699,7 @@ body {
   font-family: 'Merriweather Sans', sans-serif;
   margin-top: 5px;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .player-info {
