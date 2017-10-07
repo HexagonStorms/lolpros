@@ -71,6 +71,14 @@ class EssentialTables extends Migration
                 'region_id' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
+                'acronym' => 'DIG',
+                'name' => 'Dignitas',
+                'logo' => '/img/teams/dig.png',
+                'region_id' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ]
         ];
         Team::insert($teams);
@@ -172,6 +180,20 @@ class EssentialTables extends Migration
                 'image' => '/img/players/froggen.png',
                 'sub' => 0,
                 'retired' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
+                'handle' => 'imaqtpie',
+                'position' => 4,
+                'first_name' => 'Michael',
+                'last_name' => 'Santana',
+                'birthplace' => 'USA',
+                'twitch_username' => 'imaqtpie',
+                'team_id' => 4,
+                'image' => '/img/players/imaqtpie.png',
+                'sub' => 0,
+                'retired' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ]

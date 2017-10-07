@@ -5,18 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="/css/app.css" />
-        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
         <title>Lol Pros Online</title>
     </head>
-    <body ng-app="myApp" ng-controller="appCtrl" class="container">
-        <nav class="navbar">
-            <span>LoL Pros Online</span>
-            <!-- Large "nav" -->
+    <body ng-app="myApp" ng-controller="appCtrl">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Brand</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/submit">Submit A Player</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <section>
             <!-- Filter Div -->
         </section>
-        <section class="player-section">
+        <section class="player-section container">
             <div class="row">
                 <div ng-repeat="streamer in activeStreams" class="player-box text-center col-md-3">
                     <h2 class="player-name">[[streamer.handle]]</h2>
@@ -40,7 +50,9 @@
                             </div>
                         </div>
                     </div>
-                    <img class="player-img" ng-src="[[streamer.image]]" />
+                    <div class="player-img-container">
+                        <img class="player-img" ng-src="[[streamer.image]]" />
+                    </div>
                     <img class="team-logo" ng-src="[[streamer.team.logo]]" />
                     <div class="online-light" tooltip-placement="top" uib-tooltip="Online now!">
                         <div class="dot"></div>

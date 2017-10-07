@@ -7674,6 +7674,8 @@ button.close {
 /* GLOBAL */
 /* ----------------------------------------------------------------- */
 body {
+  font-family: 'Teko', sans-serif;
+  font-weight: 400;
   background: black;
   color: white;
 }
@@ -7681,52 +7683,50 @@ body {
 /* ----------------------------------------------------------------- */
 /* NAV */
 /* ----------------------------------------------------------------- */
-.navbar {
-  background: black;
-  height: 150px;
-  text-align: center;
-  font-size: 50px;
-  color: white;
-  padding-top: 30px;
-}
-
 /* ----------------------------------------------------------------- */
 /* PLAYER */
 /* ----------------------------------------------------------------- */
 .player-name {
   font-size: 3em;
   margin-bottom: 0;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Teko', sans-serif;
+  font-weight: 700;
   margin-top: 5px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .player-info {
-  position: absolute;
+  position: relative;
   max-width: 70px;
+  z-index: 3;
 }
 
 .player-box {
-  position: relative;
+  position: absolute;
   background: #383838;
   border-radius: 1em;
-  margin: 1em;
 }
 
 .info-title {
   color: #8a8a8a;
-  font-size: 12px;
+  font-size: 1.6em;
 }
 
-.info-content {
-  font-size: 12px;
+.player-img-container {
+  position: relative;
+  margin: 0 auto;
+  content: " ";
+  height: 10px;
+  width: 200px;
 }
 
 .player-img {
-  width: 250px;
-  position: relative;
+  width: 200px;
+  position: absolute;
+  bottom: 0;
   z-index: 2;
+  left: 0;
 }
 
 .team-logo {
