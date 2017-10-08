@@ -44,6 +44,7 @@ body {
   border-radius: 1em;
 }
 .info-title {
+  margin-top: 0;
   color: #8a8a8a;
   font-size: 1.6em;
 }
@@ -54,10 +55,10 @@ body {
     margin: 0 auto;
     content: " ";
     height: 10px;
-    width: 200px;
+    width: 250px;
 }
 .player-img {
-    width: 200px;
+    width: 250px;
     position: absolute;
     bottom: 0;
     z-index: 2;
@@ -66,7 +67,7 @@ body {
 .team-logo {
   width: 150px;
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 50px;
   z-index: 1;
 }
