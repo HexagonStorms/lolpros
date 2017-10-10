@@ -12,18 +12,17 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a href="#" class="navbar-brand">Brand</a>
+                    <a href="#" class="navbar-brand">PROPLAYERS.ONLINE</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
                         <li><a href="/submit">Submit A Player</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <section>
+        <section class="filter-section">
             <!-- Filter Div -->
         </section>
         <section class="player-section container">
@@ -54,7 +53,7 @@
                         <img class="player-img" ng-src="[[streamer.image]]" />
                     </div>
                     <img class="team-logo" ng-src="[[streamer.team.logo]]" />
-                    <div class="online-light" tooltip-placement="top" uib-tooltip="Online now!">
+                    <div class="online-light" tooltip-placement="left" uib-tooltip="Online now!">
                         <div class="dot"></div>
                         <div class="pulse"></div>
                     </div>

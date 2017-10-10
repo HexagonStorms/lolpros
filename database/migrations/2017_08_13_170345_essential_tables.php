@@ -196,6 +196,20 @@ class EssentialTables extends Migration
                 'retired' => 1,
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
+                'handle' => 'scarra',
+                'position' => 3,
+                'first_name' => 'William',
+                'last_name' => 'Li',
+                'birthplace' => 'USA',
+                'twitch_username' => 'scarra',
+                'team_id' => 4,
+                'image' => '/img/players/scarra.png',
+                'sub' => 0,
+                'retired' => 1,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
             ]
         ];
         Player::insert($players);

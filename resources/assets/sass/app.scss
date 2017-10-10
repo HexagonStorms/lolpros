@@ -5,10 +5,16 @@
 /* GLOBAL */
 /* ----------------------------------------------------------------- */
 body {
-  font-family: 'Teko', sans-serif;
-  font-weight: 400;
-  background: black;
-  color: white;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    background: black;
+    color: white;
+}
+.filter-section {
+    background: url('/img/nalcs_summer_finals2017c.jpg');
+    background-position: center;
+    height: 300px;
+    width: 100%;
 }
 /* ----------------------------------------------------------------- */
 /* NAV */
@@ -21,32 +27,36 @@ body {
 //   color: white;
 //   padding-top: 30px;
 // }
+.navbar {
+    margin-bottom: 0;
+}
 /* ----------------------------------------------------------------- */
 /* PLAYER */
 /* ----------------------------------------------------------------- */
 .player-name {
-  font-size: 3em;
-  margin-bottom: 0;
-  font-family: 'Teko', sans-serif;
-  font-weight: 700;
-  margin-top: 5px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+    font-size: 3em;
+    margin-bottom: 0;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 .player-info {
-  position: relative;
-  max-width: 70px;
-  z-index: 3;
+    position: relative;
+    max-width: 70px;
+    z-index: 3;
 }
 .player-box {
-  position: absolute;
-  background: #383838;
-  border-radius: 1em;
+    position: relative;
+    background: #383838;
+    border-radius: 1em;
+    margin: 1em;
 }
 .info-title {
-  margin-top: 0;
-  color: #8a8a8a;
-  font-size: 1.6em;
+    margin-top: 0;
+    color: #8a8a8a;
+    font-size: 1.6em;
 }
 .info-content {
 }
@@ -55,21 +65,22 @@ body {
     margin: 0 auto;
     content: " ";
     height: 10px;
-    width: 250px;
+    width: 200px;
 }
 .player-img {
-    width: 250px;
+    max-width: 250px;
+    max-height: 180px;
     position: absolute;
     bottom: 0;
     z-index: 2;
     left: 0;
 }
 .team-logo {
-  width: 150px;
-  position: absolute;
-  right: 5px;
-  top: 50px;
-  z-index: 1;
+    width: 150px;
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    z-index: 1;
 }
 
 /* ----------------------------------------------------------------- */
@@ -77,88 +88,88 @@ body {
 /* ----------------------------------------------------------------- */
 
 .online-light {
-  margin-top: 20px;
-  margin-left: 30px;
-  position: absolute;
-  bottom: 30px;
-  right: 38px;
-  background: #45453f;
+    margin-top: 20px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 38px;
+    background: #45453f;
 }
 
 .pulse {
-  width: 10px;
-  height: 10px;
-  border: 5px solid #3ada64;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background-color: #716f42;
-  z-index: 10;
-  position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 5px solid #3ada64;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #716f42;
+    z-index: 10;
+    position: absolute;
 }
 
 .dot {
-  border: 10px solid #3ada64;
-  background: transparent;
-  -webkit-border-radius: 60px;
-  -moz-border-radius: 60px;
-  border-radius: 60px;
-  height: 50px;
-  width: 50px;
-  -webkit-animation: pulse 2s ease-out;
-  -moz-animation: pulse 2s ease-out;
-  animation: pulse 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  z-index: 1;
-  opacity: 0;
+    border: 10px solid #3ada64;
+    background: transparent;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    height: 50px;
+    width: 50px;
+    -webkit-animation: pulse 2s ease-out;
+    -moz-animation: pulse 2s ease-out;
+    animation: pulse 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: 1;
+    opacity: 0;
 }
 @-moz-keyframes "pulse" {
- 0% {
-    -moz-transform: scale(0);
-    opacity: 0.0;
- }
- 25% {
-    -moz-transform: scale(0);
-    opacity: 0.1;
- }
- 50% {
-    -moz-transform: scale(0.1);
-    opacity: 0.3;
- }
- 75% {
-    -moz-transform: scale(0.5);
-    opacity: 0.5;
- }
- 100% {
-    -moz-transform: scale(1);
-    opacity: 0.0;
- }
+    0% {
+        -moz-transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        -moz-transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        -moz-transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        -moz-transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        -moz-transform: scale(1);
+        opacity: 0.0;
+    }
 }
 
 @-webkit-keyframes "pulse" {
- 0% {
-    -webkit-transform: scale(0);
-    opacity: 0.0;
- }
- 25% {
-    -webkit-transform: scale(0);
-    opacity: 0.1;
- }
- 50% {
-    -webkit-transform: scale(0.1);
-    opacity: 0.3;
- }
- 75% {
-    -webkit-transform: scale(0.5);
-    opacity: 0.5;
- }
- 100% {
-    -webkit-transform: scale(1);
-    opacity: 0.0;
- }
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
+    }
 }

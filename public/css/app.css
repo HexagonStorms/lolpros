@@ -7680,9 +7680,20 @@ body {
   color: white;
 }
 
+.filter-section {
+  background: url("/img/nalcs_summer_finals2017c.jpg");
+  background-position: center;
+  height: 300px;
+  width: 100%;
+}
+
 /* ----------------------------------------------------------------- */
 /* NAV */
 /* ----------------------------------------------------------------- */
+.navbar {
+  margin-bottom: 0;
+}
+
 /* ----------------------------------------------------------------- */
 /* PLAYER */
 /* ----------------------------------------------------------------- */
@@ -7703,9 +7714,10 @@ body {
 }
 
 .player-box {
-  position: absolute;
+  position: relative;
   background: #383838;
   border-radius: 1em;
+  margin: 1em;
 }
 
 .info-title {
@@ -7719,11 +7731,12 @@ body {
   margin: 0 auto;
   content: " ";
   height: 10px;
-  width: 250px;
+  width: 200px;
 }
 
 .player-img {
-  width: 250px;
+  max-width: 250px;
+  max-height: 180px;
   position: absolute;
   bottom: 0;
   z-index: 2;
