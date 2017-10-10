@@ -7715,9 +7715,9 @@ body {
 
 .player-box {
   position: relative;
-  background: #383838;
   border-radius: 1em;
   margin: 1em;
+  background: linear-gradient(to bottom, #333333 0%, #131313 84%, #131313 100%);
 }
 
 .info-title {

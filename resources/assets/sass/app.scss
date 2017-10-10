@@ -49,9 +49,11 @@ body {
 }
 .player-box {
     position: relative;
-    background: #383838;
+    // background: #383838;
+    // url('https://i.pinimg.com/originals/d6/aa/40/d6aa404338a0dc32e8f65b6a80a8aa46.jpg')
     border-radius: 1em;
     margin: 1em;
+    background: linear-gradient(to bottom, rgb(51, 51, 51) 0%, #131313 84%, #131313 100%);
 }
 .info-title {
     margin-top: 0;
