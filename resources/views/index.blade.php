@@ -23,6 +23,14 @@
             </div>
         </nav>
         <section class="filter-section">
+            <div class="row text-center">
+                <h2>[[activeStreams.length]] Pro League of Legends Players Currently Streaming</h2>
+            </div>
+            <div class="row text-center">
+                <div class="search-container">
+                    <input type="text" placeholder="Search by name, team, or region..." class="searchbox">
+                </div>
+            </div>
             <!-- Filter Div -->
         </section>
         <section class="player-section container">
