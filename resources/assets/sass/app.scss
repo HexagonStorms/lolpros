@@ -10,12 +10,6 @@ body {
     background: black;
     color: white;
 }
-.filter-section {
-    background: url('/img/nalcs_summer_finals2017c.jpg');
-    background-position: center;
-    height: 300px;
-    width: 100%;
-}
 /* ----------------------------------------------------------------- */
 /* NAV */
 /* ----------------------------------------------------------------- */
@@ -34,10 +28,32 @@ body {
 /* FILTER */
 /* ----------------------------------------------------------------- */
 .search-container {
+    padding: 3em;
     float: none;
 }
 .search-box {
     width: 100%;
+}
+.select-container {
+    margin-top: 2em;
+}
+.filter-section {
+    background: url('/img/nalcs_summer_finals2017c.jpg');
+    background-position: center;
+    height: 300px;
+    width: 100%;
+}
+.filter-select-container {
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 2px;
+}
+.filter-select {
+    color: black;
+    width: 100%;
+}
+select {
+    background: white;
 }
 /* ----------------------------------------------------------------- */
 /* PLAYER */

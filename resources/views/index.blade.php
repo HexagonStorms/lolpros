@@ -33,10 +33,27 @@
                     <input type="text" placeholder="Search by name, team, or region..." class="search-box">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-4"></div>
+            <div class="row text-center select-container">
+                <div class="col-md-3 filter-select-container">
+                    <select class="filter-select">
+                        <option value="0">Online Only</option>
+                    </select>
+                </div>
+                <div class="col-md-3 filter-select-container">
+                    <select class="filter-select">
+                        <option value="0">-- Select Region --</option>
+                    </select>
+                </div>
+                <div class="col-md-3 filter-select-container">
+                    <select class="filter-select">
+                        <option value="0">-- Select Team --</option>
+                    </select>
+                </div>
+                <div class="col-md-3 filter-select-container">
+                    <select class="filter-select">
+                        <option value="0">-- Select Position --</option>
+                    </select>
+                </div>
             </div>
         </section>
         
