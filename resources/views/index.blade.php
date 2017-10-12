@@ -22,17 +22,24 @@
                 </div>
             </div>
         </nav>
+        
+        <!-- Filter Section -->
         <section class="filter-section">
             <div class="row text-center">
                 <h2>[[activeStreams.length]] Pro League of Legends Players Currently Streaming</h2>
             </div>
             <div class="row text-center">
-                <div class="search-container">
-                    <input type="text" placeholder="Search by name, team, or region..." class="searchbox">
+                <div class="search-container col-md-5 center-block">
+                    <input type="text" placeholder="Search by name, team, or region..." class="search-box">
                 </div>
             </div>
-            <!-- Filter Div -->
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
         </section>
+        
         <section class="player-section container">
             <div class="row">
                 <div ng-repeat="streamer in activeStreams" class="player-box text-center col-md-3">
