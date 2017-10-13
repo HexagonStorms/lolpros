@@ -37,6 +37,8 @@
                 <div class="col-md-3 filter-select-container">
                     <select class="filter-select">
                         <option value="0">Online Only</option>
+                        <option value="1">Offline Only</option>
+                        <option value="2">All</option>
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
