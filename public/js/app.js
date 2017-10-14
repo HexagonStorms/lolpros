@@ -9,10 +9,10 @@ app.controller('appCtrl', function(mainFactory, $scope) {
         $scope.teams = response.data.teams;
         
         $scope.filter = {
-			team: 0,
-			position: 0,
-			region: 0,
-			status: 1
+			team: "0",
+			position: "0",
+			region: "0",
+			status: "1"
 		};
     });
   

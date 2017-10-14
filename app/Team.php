@@ -35,7 +35,7 @@ class Team extends BaseModel
 		),
 		array(
 			'id' => self::REGION_LCK, 
-			'Acronym' => 'LCK',
+			'acronym' => 'LCK',
 			'name' => 'League of Legends Champions Korea', 
 			'region' => 'South Korea', 
 			'location' => 'Seoul'

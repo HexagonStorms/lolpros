@@ -44,6 +44,7 @@
                 <div class="col-md-3 filter-select-container">
                     <select class="filter-select">
                         <option value="0">-- Select Region --</option>
+                        <option ng-repeat="region in regions" value="[[region.id]]">[[region.acronym]] - [[region.name]]</option>
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
@@ -55,6 +56,7 @@
                 <div class="col-md-3 filter-select-container">
                     <select class="filter-select">
                         <option value="0">-- Select Position --</option>
+                        <option ng-repeat="position in positions" value="[[position.id]]">[[position.name]]</option>
                     </select>
                 </div>
             </div>
