@@ -50,7 +50,11 @@ class MainController extends Controller
                 $list = '?';
             }
         }
+        
+        $regions = Team::$REGIONS;
+        $positions = Player::$POSITIONS;
+        $teams = Team::all();
 
-        return response()->json(['players' => $players, 'activeStreams' => $activeStreams]); 
+        return response()->json(['players' => $players, 'activeStreams' => $activeStreams, 'regions' => $regions, 'teams' => $teams, 'positions' => $positions]); 
     }
 }

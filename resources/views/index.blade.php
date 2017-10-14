@@ -47,8 +47,9 @@
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
-                    <select class="filter-select">
+                    <select class="filter-select" ng-model="filter.team">
                         <option value="0">-- Select Team --</option>
+                        <option ng-repeat="team in teams" value="[[team.id]]">[[team.region_id.acronym]] - [[team.name]]</option>
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
