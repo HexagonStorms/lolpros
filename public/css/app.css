@@ -7733,13 +7733,14 @@ select {
 /* PLAYER */
 /* ----------------------------------------------------------------- */
 .player-name {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 0;
   font-family: 'Teko', sans-serif;
   font-weight: 700;
   margin-top: 5px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  text-shadow: 2px 2px black;
 }
 
 .player-info {

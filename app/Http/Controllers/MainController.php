@@ -41,12 +41,27 @@ class MainController extends Controller
                     Log::info("cURL Error #:" . $err);
                 } else {
                     $response = json_decode($response, TRUE);
-                    Log::info($response['data']);
+                    // Log::info($response['data']);
+                    
+                    $activeStreamers = [];
                     foreach($response['data'] as $stream) {
-                        $activeStreamer = $players->where('twitch_user_id', $stream['user_id'])->first();
-                        $activeStreamer['online'] = true;
-                        Log::info($activeStreamer);
+                        $activeStreamers[] = $stream['user_id'];
+                        // $activeStreamer = $players->where('twitch_user_id', $stream['user_id'])->first();
+                        // $activeStreamer['online'] = "1";
+                        // Log::info($activeStreamer);
                     }
+                    
+                    Log::info($activeStreamers);
+                    
+                    $players->each(function($player) use ($activeStreamers) {
+                        if (in_array($player->twitch_user_id, $activeStreamers)) {
+                            $player->online = "1";
+                        } else {
+                            $player->online = "0";
+                        }
+                    });
+                    
+                    
                 }
                 $list = '?';
             }
@@ -54,8 +69,9 @@ class MainController extends Controller
         
         $regions = Team::$REGIONS;
         $positions = Player::$POSITIONS;
+        $statuses = Player::$STATUSES;
         $teams = Team::all();
 
-        return response()->json(['players' => $players, 'regions' => $regions, 'teams' => $teams, 'positions' => $positions]); 
+        return response()->json(['players' => $players, 'regions' => $regions, 'teams' => $teams, 'positions' => $positions, 'statuses' => $statuses]); 
     }
 }

@@ -35,14 +35,12 @@
             </div>
             <div class="row text-center select-container">
                 <div class="col-md-3 filter-select-container">
-                    <select class="filter-select">
-                        <option value="0">Online Only</option>
-                        <option value="1">Offline Only</option>
-                        <option value="2">All</option>
+                    <select class="filter-select" ng-model="filter.status">
+                        <option ng-repeat="status in statuses" value="[[status.id]]">[[status.name]]</option>
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
-                    <select class="filter-select">
+                    <select class="filter-select" ng-model="filter.region">
                         <option value="0">-- Select Region --</option>
                         <option ng-repeat="region in regions" value="[[region.id]]">[[region.acronym]] - [[region.name]]</option>
                     </select>
@@ -54,7 +52,7 @@
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
-                    <select class="filter-select">
+                    <select class="filter-select" ng-model="filter.position">
                         <option value="0">-- Select Position --</option>
                         <option ng-repeat="position in positions" value="[[position.id]]">[[position.name]]</option>
                     </select>
@@ -64,7 +62,7 @@
         
         <section class="player-section container-fluid">
             <div class="row">
-                <div ng-repeat="streamer in players" class="player-box text-center col-md-2">
+                <div ng-repeat="streamer in players | filter: { online: filter.status }" class="player-box text-center col-md-2">
                     <h2 class="player-name">[[streamer.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">

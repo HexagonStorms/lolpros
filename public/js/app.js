@@ -7,6 +7,7 @@ app.controller('appCtrl', function(mainFactory, $scope) {
         $scope.players = response.data.players;
         $scope.positions = response.data.positions;
         $scope.regions = response.data.regions;
+        $scope.statuses = response.data.statuses;
         $scope.teams = response.data.teams;
         
         $scope.activeStreamers = _.filter($scope.players, function(player) {

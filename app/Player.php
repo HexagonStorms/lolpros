@@ -11,6 +11,16 @@ class Player extends BaseModel
     const POSITION_SUPPORT = 5;
     const POSITION_COACH = 6;
     
+    const STATUS_OFFLINE = 0;
+    const STATUS_ONLINE = 1;
+    const STATUS_ALL = "";
+    
+    public static $STATUSES = array(
+        array('id' => self::STATUS_OFFLINE, 'name' => 'Offline Only'),
+        array('id' => self::STATUS_ONLINE,  'name' => 'Online Only'),
+        array('id' => self::STATUS_ALL, 'name' => 'All'),
+    );
+    
     public static $POSITIONS = array(
     	array('id' => self::POSITION_TOP, 'name' => 'Top'),
     	array('id' => self::POSITION_JUNGLE,  'name' => 'Jungle'),
