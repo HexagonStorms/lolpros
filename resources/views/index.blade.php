@@ -16,8 +16,8 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/submit">Submit A Player</a></li>
+                        <!-- <li><a href="/about">About</a></li> -->
+                        <!-- <li><a href="/submit">Submit A Player</a></li> -->
                     </ul>
                 </div>
             </div>
