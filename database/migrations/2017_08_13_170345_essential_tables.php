@@ -28,7 +28,6 @@ class EssentialTables extends Migration
             $table->string('image')->nullable();
             $table->boolean('sub')->default(0);
             $table->boolean('retired')->default(0);
-            $table->dateTime('last_online')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -107,7 +106,7 @@ class EssentialTables extends Migration
                 'birthplace' => 'Denmark',
                 'twitch_username' => 'tsm_svenskeren',
                 'team_id' => 1,
-                'image' => '/img/players/svenkeren.png',
+                'image' => '/img/players/svenskeren.png',
                 'sub' => 0,
                 'retired' => 0,
                 'created_at' => date('Y-m-d H:i:s'),

@@ -7710,7 +7710,7 @@ body {
 .filter-section {
   background: url("/img/nalcs_summer_finals2017c.jpg");
   background-position: center;
-  height: 300px;
+  padding: 0 1em 3em 1em;
   width: 100%;
 }
 
@@ -7766,11 +7766,11 @@ select {
   margin: 0 auto;
   content: " ";
   height: 10px;
-  width: 200px;
+  width: 180px;
 }
 
 .player-img {
-  max-width: 250px;
+  max-width: 200px;
   max-height: 180px;
   position: absolute;
   bottom: 0;

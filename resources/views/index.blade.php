@@ -26,7 +26,7 @@
         <!-- Filter Section -->
         <section class="filter-section">
             <div class="row text-center">
-                <h2 class="slogan">[[activeStreams.length]] Pro League of Legends Players Currently Streaming</h2>
+                <h2 class="slogan">[[activeStreamers.length]] Pro League of Legends Players Currently Streaming</h2>
             </div>
             <div class="row text-center">
                 <div class="search-container col-md-5 center-block">
@@ -62,9 +62,9 @@
             </div>
         </section>
         
-        <section class="player-section container">
+        <section class="player-section container-fluid">
             <div class="row">
-                <div ng-repeat="streamer in activeStreams" class="player-box text-center col-md-3">
+                <div ng-repeat="streamer in players" class="player-box text-center col-md-2">
                     <h2 class="player-name">[[streamer.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">
@@ -100,6 +100,7 @@
         <footer>
             <!-- footer -->
         </footer>
+        <script src="/js/underscore-min.1.8.3.js"></script>
         <script src="/js/angular.min.js"></script>
         <script src="/js/angular-animate.min.js"></script>
         <script src="/js/angular-touch.min.js"></script>

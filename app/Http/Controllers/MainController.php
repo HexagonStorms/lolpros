@@ -41,12 +41,11 @@ class MainController extends Controller
                     Log::info("cURL Error #:" . $err);
                 } else {
                     $response = json_decode($response, TRUE);
-                    Log::info($players);
+                    Log::info($response['data']);
                     foreach($response['data'] as $stream) {
-                        // instead of making a new array, find user in players collection and add new fields:
-                        // online - boolean
-                        // streaming url
-                        // $activeStreams[] = $players->where('twitch_user_id', $stream['user_id'])->first();
+                        $activeStreamer = $players->where('twitch_user_id', $stream['user_id'])->first();
+                        $activeStreamer['online'] = true;
+                        Log::info($activeStreamer);
                     }
                 }
                 $list = '?';
