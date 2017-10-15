@@ -13,7 +13,6 @@ class MainController extends Controller
         $i = 0;
         $limiter = 100;
         $list = '?';
-        $activeStreams = [];
         $players = Player::with('team')->get();
         $count = $players->count();
         
@@ -44,7 +43,10 @@ class MainController extends Controller
                     $response = json_decode($response, TRUE);
                     Log::info($players);
                     foreach($response['data'] as $stream) {
-                        $activeStreams[] = $players->where('twitch_user_id', $stream['user_id'])->first();
+                        // instead of making a new array, find user in players collection and add new fields:
+                        // online - boolean
+                        // streaming url
+                        // $activeStreams[] = $players->where('twitch_user_id', $stream['user_id'])->first();
                     }
                 }
                 $list = '?';
@@ -55,6 +57,6 @@ class MainController extends Controller
         $positions = Player::$POSITIONS;
         $teams = Team::all();
 
-        return response()->json(['players' => $players, 'activeStreams' => $activeStreams, 'regions' => $regions, 'teams' => $teams, 'positions' => $positions]); 
+        return response()->json(['players' => $players, 'regions' => $regions, 'teams' => $teams, 'positions' => $positions]); 
     }
 }
