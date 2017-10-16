@@ -62,7 +62,7 @@
         
         <section class="player-section container-fluid">
             <div class="row">
-                <div ng-repeat="streamer in players | filter: { online: filter.status }" class="player-box text-center col-md-2">
+                <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: team: { region_id: { id: filter.region }}" class="player-box text-center col-md-2">
                     <h2 class="player-name">[[streamer.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">
