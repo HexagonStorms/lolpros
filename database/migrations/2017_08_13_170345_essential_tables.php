@@ -41,11 +41,11 @@ class EssentialTables extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
-        
+
         // Insert Data
-        
+
         // Teams
-        
+        // TODO Add OpTic, Liquid, FlyQuest, CLG, ...
         $teams = [
             [
                 'acronym' => 'TSM',
@@ -81,7 +81,7 @@ class EssentialTables extends Migration
             ]
         ];
         Team::insert($teams);
-        
+
         // Players
         $players = [
             [
