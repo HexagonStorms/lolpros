@@ -15,9 +15,9 @@ app.controller('appCtrl', function(mainFactory, $scope) {
         });
         
         $scope.filter = {
-			// team: "0",
-			// position: "0",
-			region: 2,
+			team: "",
+			position: "",
+			region: "",
 			status: "1"
 		};
     });
