@@ -41,19 +41,19 @@
                 </div>
                 <div class="col-md-3 filter-select-container">
                     <select class="filter-select" ng-model="filter.region">
-                        <option value="0">-- Select Region --</option>
+                        <option value="">-- Select Region --</option>
                         <option ng-repeat="region in regions" value="[[region.id]]">[[region.acronym]] - [[region.name]]</option>
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
                     <select class="filter-select" ng-model="filter.team">
-                        <option value="0">-- Select Team --</option>
+                        <option value="">-- Select Team --</option>
                         <option ng-repeat="team in teams" value="[[team.id]]">[[team.region_id.acronym]] - [[team.name]]</option>
                     </select>
                 </div>
                 <div class="col-md-3 filter-select-container">
                     <select class="filter-select" ng-model="filter.position">
-                        <option value="0">-- Select Position --</option>
+                        <option value="">-- Select Position --</option>
                         <option ng-repeat="position in positions" value="[[position.id]]">[[position.name]]</option>
                     </select>
                 </div>
