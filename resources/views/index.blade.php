@@ -30,7 +30,7 @@
             </div>
             <div class="row text-center">
                 <div class="search-container col-md-5 center-block">
-                    <input type="text" placeholder="Search by name, team, or region..." class="search-box">
+                    <input type="text" placeholder="Search by name, team, or region..." class="search-box" ng-model="query">
                 </div>
             </div>
             <div class="row text-center select-container">
@@ -62,7 +62,7 @@
         
         <section class="player-section container-fluid">
             <div class="row">
-                <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: { team: { region_id: { id: filter.region }}} | filter: { team: { id: filter.team }} | filter: { position: { id: filter.position }}" class="player-box text-center col-md-2">
+                <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: { team: { region_id: { id: filter.region }}} | filter: { team: { id: filter.team }} | filter: { position: { id: filter.position }} | filter: search" class="player-box text-center col-md-2">
                     <h2 class="player-name">[[streamer.handle]]</h2>
                     <div class="player-info text-left">
                         <div class="row">
