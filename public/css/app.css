@@ -7673,11 +7673,19 @@ button.close {
 /* ----------------------------------------------------------------- */
 /* GLOBAL */
 /* ----------------------------------------------------------------- */
-body {
+h1, h2, h3, h4, h5, h6, input, select, .navbar-brand {
   font-family: 'Teko', sans-serif;
   font-weight: 400;
+}
+
+body {
   background: black;
   color: white;
+}
+
+.navbar {
+  border: none;
+  border-radius: 0;
 }
 
 /* ----------------------------------------------------------------- */
@@ -7702,6 +7710,7 @@ body {
 .search-box {
   color: black;
   width: 100%;
+  padding: 3px;
 }
 
 .select-container {
@@ -7786,6 +7795,28 @@ select {
   right: 2px;
   top: 20px;
   z-index: 1;
+}
+
+/* ----------------------------------------------------------------- */
+/* ABOUT */
+/* ----------------------------------------------------------------- */
+.about-header {
+  margin-top: 0;
+  background: url("/img/nalcs_summer_finals2017_about.jpg");
+  background-position: center;
+  padding: 1em 1em;
+  width: 100%;
+  font-size: 4em;
+}
+
+.social-media {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social-media li {
+  float: left;
+  padding: 1em;
 }
 
 /* ----------------------------------------------------------------- */
