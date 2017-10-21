@@ -7688,6 +7688,28 @@ body {
   border-radius: 0;
 }
 
+.no-link {
+  color: white;
+  text-decoration: none;
+}
+
+.no-link:hover {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  color: #6441A5;
+}
+
+a:hover {
+  color: #9a7fcd;
+}
+
 /* ----------------------------------------------------------------- */
 /* NAV */
 /* ----------------------------------------------------------------- */
@@ -7742,6 +7764,12 @@ select {
 /* ----------------------------------------------------------------- */
 /* PLAYER */
 /* ----------------------------------------------------------------- */
+.player-twitch {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
 .player-name {
   font-size: 2em;
   margin-bottom: 0;
@@ -7816,7 +7844,7 @@ select {
 
 .social-media li {
   float: left;
-  padding: 1em;
+  padding-left: 1em;
 }
 
 /* ----------------------------------------------------------------- */

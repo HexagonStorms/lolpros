@@ -48,6 +48,14 @@ class EssentialTables extends Migration
         // TODO Add OpTic, Liquid, FlyQuest, CLG, ...
         $teams = [
             [
+                'acronym' => 'RET',
+                'name' => 'Retired',
+                'logo' => '/img/teams/retired.gif',
+                'region_id' => 0,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s')
+            ],
+            [
                 'acronym' => 'TSM',
                 'name' => 'Team Solo Mid',
                 'logo' => '/img/teams/tsm.png',
@@ -55,14 +63,14 @@ class EssentialTables extends Migration
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ],
-            [
-                'acronym' => 'IMT',
-                'name' => 'Immortals',
-                'logo' => '/img/teams/imt.png',
-                'region_id' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
+            // [
+            //     'acronym' => 'IMT',
+            //     'name' => 'Immortals',
+            //     'logo' => '/img/teams/imt.png',
+            //     'region_id' => 1,
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s')
+            // ],
             [
                 'acronym' => 'FOX',
                 'name' => 'Echo Fox',
@@ -71,14 +79,14 @@ class EssentialTables extends Migration
                 'created_at' => date('Y-m-d H:i:s'),
                 'updated_at' => date('Y-m-d H:i:s')
             ],
-            [
-                'acronym' => 'DIG',
-                'name' => 'Dignitas',
-                'logo' => '/img/teams/dig.png',
-                'region_id' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ]
+            // [
+            //     'acronym' => 'DIG',
+            //     'name' => 'Dignitas',
+            //     'logo' => '/img/teams/dig.png',
+            //     'region_id' => 1,
+            //     'created_at' => date('Y-m-d H:i:s'),
+            //     'updated_at' => date('Y-m-d H:i:s')
+            // ]
         ];
         Team::insert($teams);
 
@@ -91,7 +99,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Yarnell',
                 'birthplace' => 'USA',
                 'twitch_username' => 'tsm_hauntzer',
-                'team_id' => 1,
+                'team_id' => 2,
                 'image' => '/img/players/hauntzer.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -105,7 +113,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Johnsen',
                 'birthplace' => 'Denmark',
                 'twitch_username' => 'tsm_svenskeren',
-                'team_id' => 1,
+                'team_id' => 2,
                 'image' => '/img/players/svenskeren.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -119,7 +127,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Bjerg',
                 'birthplace' => 'Denmark',
                 'twitch_username' => 'tsm_bjergsen',
-                'team_id' => 1,
+                'team_id' => 2,
                 'image' => '/img/players/bjergsen.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -133,7 +141,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Peng',
                 'birthplace' => 'USA',
                 'twitch_username' => 'doublelift',
-                'team_id' => 1,
+                'team_id' => 2,
                 'image' => '/img/players/doublelift.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -147,7 +155,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Wang',
                 'birthplace' => 'Canada',
                 'twitch_username' => 'tsm_biofrost',
-                'team_id' => 1,
+                'team_id' => 2,
                 'image' => '/img/players/biofrost.png',
                 'sub' => 0,
                 'retired' => 0,
@@ -189,7 +197,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Santana',
                 'birthplace' => 'USA',
                 'twitch_username' => 'imaqtpie',
-                'team_id' => 4,
+                'team_id' => 1,
                 'image' => '/img/players/imaqtpie.png',
                 'sub' => 0,
                 'retired' => 1,
@@ -203,7 +211,7 @@ class EssentialTables extends Migration
                 'last_name' => 'Li',
                 'birthplace' => 'USA',
                 'twitch_username' => 'scarra',
-                'team_id' => 4,
+                'team_id' => 1,
                 'image' => '/img/players/scarra.png',
                 'sub' => 0,
                 'retired' => 1,

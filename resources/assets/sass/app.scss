@@ -16,6 +16,23 @@ body {
     border: none;
     border-radius: 0;
 }
+.no-link {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: darken(white, 20%);
+        text-decoration: none;
+    }
+}
+.pointer {
+    cursor: pointer;
+}
+a {
+    color: $twitch-color;
+    &:hover {
+        color: lighten($twitch-color, 20%);
+    }
+}
 /* ----------------------------------------------------------------- */
 /* NAV */
 /* ----------------------------------------------------------------- */
@@ -34,7 +51,7 @@ body {
 /* FILTER */
 /* ----------------------------------------------------------------- */
 .slogan {
-    text-shadow: 2px 2px #6441A5;
+    text-shadow: 2px 2px $twitch-color;
 }
 .search-container {
     padding: 3em;
@@ -69,6 +86,11 @@ select {
 /* ----------------------------------------------------------------- */
 /* PLAYER */
 /* ----------------------------------------------------------------- */
+.player-twitch {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 .player-name {
     font-size: 2em;
     margin-bottom: 0;
@@ -139,7 +161,7 @@ select {
 }
 .social-media li {
     float: left;
-    padding: 1em;
+    padding-left: 1em;
 }
 /* ----------------------------------------------------------------- */
 /* ONLINE PULSE */

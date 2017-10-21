@@ -4,6 +4,7 @@ namespace App;
 
 class Team extends BaseModel
 {
+	const REGION_NULL = 0;
 	const REGION_NA = 1;
 	const REGION_EU = 2;
 	const REGION_LCK = 3;
@@ -19,6 +20,13 @@ class Team extends BaseModel
 	const REGION_OPL = 13;
 	
 	public static $REGIONS = array(
+		array(
+			'id' => self::REGION_NULL,
+			'acronym' => 'N/A',
+			'name' => 'Not Applicable', 
+			'region' => 'N/A', 
+			'location' => 'N/A'
+		),
 		array(
 			'id' => self::REGION_NA,
 			'acronym' => 'NA LCS',

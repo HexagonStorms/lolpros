@@ -17,7 +17,7 @@
         <div class="col-md-3 filter-select-container">
             <select class="filter-select" ng-model="filter.region">
                 <option value="">-- Select Region --</option>
-                <option ng-repeat="region in regions" value="[[region.id]]">[[region.acronym]] - [[region.name]]</option>
+                <option ng-repeat="region in regions" ng-if="$index > 0" value="[[region.id]]">[[region.acronym]] - [[region.name]]</option>
             </select>
         </div>
         <div class="col-md-3 filter-select-container">
@@ -38,7 +38,10 @@
 <section class="player-section container-fluid">
     <div class="row">
         <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: { team: { region_id: { id: filter.region }}} | filter: { team: { id: filter.team }} | filter: { position: { id: filter.position }} | filter: search" class="player-box text-center col-md-2">
+            <a href="https://twitch.tv/[[streamer.twitch_username]]" class="player-twitch pointer"><i class="fab fa-twitch"></i></a>
+            
             <h2 class="player-name">[[streamer.handle]]</h2>
+   
             <div class="player-info text-left">
                 <div class="row">
                     <div class="col-md-12">
@@ -60,10 +63,10 @@
                 </div>
             </div>
             <div class="player-img-container">
-                <img class="player-img" ng-src="[[streamer.image]]" />
+                <a href="https://twitch.tv/[[streamer.twitch_username]]" class="pointer"><img class="player-img" ng-src="[[streamer.image]]" /></a>
             </div>
             <img class="team-logo" ng-src="[[streamer.team.logo]]" />
-            <div class="online-light" tooltip-placement="left" uib-tooltip="Online now!">
+            <div class="online-light" tooltip-placement="left" ng-show="streamer.online == 1" uib-tooltip="Online now!">
                 <div class="dot"></div>
                 <div class="pulse"></div>
             </div>
