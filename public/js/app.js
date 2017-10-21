@@ -1,3 +1,16 @@
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "ng-views/main.html"
+    })
+    .when("/about", {
+        templateUrl : "ng-views/about.html"
+    })
+    .otherwise({
+        redirectTo: '/'
+    });
+});
+
 app.controller('appCtrl', function(mainFactory, $scope) {
 	$scope.activeCount = 0;
     
