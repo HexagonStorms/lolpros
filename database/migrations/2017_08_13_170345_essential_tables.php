@@ -45,181 +45,181 @@ class EssentialTables extends Migration
         // Insert Data
 
         // Teams
-        // TODO Add OpTic, Liquid, FlyQuest, CLG, ...
-        $teams = [
-            [
-                'acronym' => 'RET',
-                'name' => 'Retired',
-                'logo' => '/img/teams/retired.gif',
-                'region_id' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'acronym' => 'TSM',
-                'name' => 'Team Solo Mid',
-                'logo' => '/img/teams/tsm.png',
-                'region_id' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            // [
-            //     'acronym' => 'IMT',
-            //     'name' => 'Immortals',
-            //     'logo' => '/img/teams/imt.png',
-            //     'region_id' => 1,
-            //     'created_at' => date('Y-m-d H:i:s'),
-            //     'updated_at' => date('Y-m-d H:i:s')
-            // ],
-            [
-                'acronym' => 'FOX',
-                'name' => 'Echo Fox',
-                'logo' => '/img/teams/fox.png',
-                'region_id' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            // [
-            //     'acronym' => 'DIG',
-            //     'name' => 'Dignitas',
-            //     'logo' => '/img/teams/dig.png',
-            //     'region_id' => 1,
-            //     'created_at' => date('Y-m-d H:i:s'),
-            //     'updated_at' => date('Y-m-d H:i:s')
-            // ]
-        ];
-        Team::insert($teams);
+        // TODO Add OpTic, Liquid, FlyQuest, CLG, Rockets, Cavs, Warriors...
+        // $teams = [
+        //     [
+        //         'acronym' => 'RET',
+        //         'name' => 'Retired',
+        //         'logo' => '/img/teams/retired.gif',
+        //         'region_id' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'acronym' => 'TSM',
+        //         'name' => 'Team Solo Mid',
+        //         'logo' => '/img/teams/tsm.png',
+        //         'region_id' => 1,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     // [
+        //     //     'acronym' => 'IMT',
+        //     //     'name' => 'Immortals',
+        //     //     'logo' => '/img/teams/imt.png',
+        //     //     'region_id' => 1,
+        //     //     'created_at' => date('Y-m-d H:i:s'),
+        //     //     'updated_at' => date('Y-m-d H:i:s')
+        //     // ],
+        //     [
+        //         'acronym' => 'FOX',
+        //         'name' => 'Echo Fox',
+        //         'logo' => '/img/teams/fox.png',
+        //         'region_id' => 1,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     // [
+        //     //     'acronym' => 'DIG',
+        //     //     'name' => 'Dignitas',
+        //     //     'logo' => '/img/teams/dig.png',
+        //     //     'region_id' => 1,
+        //     //     'created_at' => date('Y-m-d H:i:s'),
+        //     //     'updated_at' => date('Y-m-d H:i:s')
+        //     // ]
+        // ];
+        // Team::insert($teams);
 
         // Players
-        $players = [
-            [
-                'handle' => 'hauntzer',
-                'position' => 1,
-                'first_name' => 'Kevin',
-                'last_name' => 'Yarnell',
-                'birthplace' => 'USA',
-                'twitch_username' => 'tsm_hauntzer',
-                'team_id' => 2,
-                'image' => '/img/players/hauntzer.png',
-                'sub' => 0,
-                'retired' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'svenskeren',
-                'position' => 2,
-                'first_name' => 'Dennis',
-                'last_name' => 'Johnsen',
-                'birthplace' => 'Denmark',
-                'twitch_username' => 'tsm_svenskeren',
-                'team_id' => 2,
-                'image' => '/img/players/svenskeren.png',
-                'sub' => 0,
-                'retired' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'bjergsen',
-                'position' => 3,
-                'first_name' => 'Søren',
-                'last_name' => 'Bjerg',
-                'birthplace' => 'Denmark',
-                'twitch_username' => 'tsm_bjergsen',
-                'team_id' => 2,
-                'image' => '/img/players/bjergsen.png',
-                'sub' => 0,
-                'retired' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'doublelift',
-                'position' => 4,
-                'first_name' => 'Yiliang',
-                'last_name' => 'Peng',
-                'birthplace' => 'USA',
-                'twitch_username' => 'doublelift',
-                'team_id' => 2,
-                'image' => '/img/players/doublelift.png',
-                'sub' => 0,
-                'retired' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'biofrost',
-                'position' => 5,
-                'first_name' => 'Vincent',
-                'last_name' => 'Wang',
-                'birthplace' => 'Canada',
-                'twitch_username' => 'tsm_biofrost',
-                'team_id' => 2,
-                'image' => '/img/players/biofrost.png',
-                'sub' => 0,
-                'retired' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'dyrus',
-                'position' => 1,
-                'first_name' => 'Marcus',
-                'last_name' => 'Hill',
-                'birthplace' => 'USA',
-                'twitch_username' => 'tsm_dyrus',
-                'team_id' => 1,
-                'image' => '/img/players/dyrus.png',
-                'sub' => 0,
-                'retired' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'froggen',
-                'position' => 3,
-                'first_name' => 'Henrik',
-                'last_name' => 'Hansen',
-                'birthplace' => 'Denmark',
-                'twitch_username' => 'froggen',
-                'team_id' => 3,
-                'image' => '/img/players/froggen.png',
-                'sub' => 0,
-                'retired' => 0,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'imaqtpie',
-                'position' => 4,
-                'first_name' => 'Michael',
-                'last_name' => 'Santana',
-                'birthplace' => 'USA',
-                'twitch_username' => 'imaqtpie',
-                'team_id' => 1,
-                'image' => '/img/players/imaqtpie.png',
-                'sub' => 0,
-                'retired' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ],
-            [
-                'handle' => 'scarra',
-                'position' => 3,
-                'first_name' => 'William',
-                'last_name' => 'Li',
-                'birthplace' => 'USA',
-                'twitch_username' => 'scarra',
-                'team_id' => 1,
-                'image' => '/img/players/scarra.png',
-                'sub' => 0,
-                'retired' => 1,
-                'created_at' => date('Y-m-d H:i:s'),
-                'updated_at' => date('Y-m-d H:i:s')
-            ]
-        ];
-        Player::insert($players);
+        // $players = [
+        //     [
+        //         'handle' => 'hauntzer',
+        //         'position' => 1,
+        //         'first_name' => 'Kevin',
+        //         'last_name' => 'Yarnell',
+        //         'birthplace' => 'USA',
+        //         'twitch_username' => 'tsm_hauntzer',
+        //         'team_id' => 2,
+        //         'image' => '/img/players/hauntzer.png',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'svenskeren',
+        //         'position' => 2,
+        //         'first_name' => 'Dennis',
+        //         'last_name' => 'Johnsen',
+        //         'birthplace' => 'Denmark',
+        //         'twitch_username' => 'tsm_svenskeren',
+        //         'team_id' => 2,
+        //         'image' => '/img/players/svenskeren.png',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'bjergsen',
+        //         'position' => 3,
+        //         'first_name' => 'Søren',
+        //         'last_name' => 'Bjerg',
+        //         'birthplace' => 'Denmark',
+        //         'twitch_username' => 'tsm_bjergsen',
+        //         'team_id' => 2,
+        //         'image' => '/img/players/bjergsen.png',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'doublelift',
+        //         'position' => 4,
+        //         'first_name' => 'Yiliang',
+        //         'last_name' => 'Peng',
+        //         'birthplace' => 'USA',
+        //         'twitch_username' => 'doublelift',
+        //         'team_id' => 2,
+        //         'image' => '/img/players/doublelift.png',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'biofrost',
+        //         'position' => 5,
+        //         'first_name' => 'Vincent',
+        //         'last_name' => 'Wang',
+        //         'birthplace' => 'Canada',
+        //         'twitch_username' => 'tsm_biofrost',
+        //         'team_id' => 2,
+        //         'image' => '/img/players/biofrost.png',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'dyrus',
+        //         'position' => 1,
+        //         'first_name' => 'Marcus',
+        //         'last_name' => 'Hill',
+        //         'birthplace' => 'USA',
+        //         'twitch_username' => 'tsm_dyrus',
+        //         'team_id' => 1,
+        //         'image' => '/img/players/dyrus.png',
+        //         'sub' => 0,
+        //         'retired' => 1,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'froggen',
+        //         'position' => 3,
+        //         'first_name' => 'Henrik',
+        //         'last_name' => 'Hansen',
+        //         'birthplace' => 'Denmark',
+        //         'twitch_username' => 'froggen',
+        //         'team_id' => 3,
+        //         'image' => '/img/players/froggen.png',
+        //         'sub' => 0,
+        //         'retired' => 0,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'imaqtpie',
+        //         'position' => 4,
+        //         'first_name' => 'Michael',
+        //         'last_name' => 'Santana',
+        //         'birthplace' => 'USA',
+        //         'twitch_username' => 'imaqtpie',
+        //         'team_id' => 1,
+        //         'image' => '/img/players/imaqtpie.png',
+        //         'sub' => 0,
+        //         'retired' => 1,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ],
+        //     [
+        //         'handle' => 'scarra',
+        //         'position' => 3,
+        //         'first_name' => 'William',
+        //         'last_name' => 'Li',
+        //         'birthplace' => 'USA',
+        //         'twitch_username' => 'scarra',
+        //         'team_id' => 1,
+        //         'image' => '/img/players/scarra.png',
+        //         'sub' => 0,
+        //         'retired' => 1,
+        //         'created_at' => date('Y-m-d H:i:s'),
+        //         'updated_at' => date('Y-m-d H:i:s')
+        //     ]
+        // ];
+        // Player::insert($players);
     }
 
     /**
