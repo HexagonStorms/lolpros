@@ -86,10 +86,45 @@ select {
 /* ----------------------------------------------------------------- */
 /* PLAYER */
 /* ----------------------------------------------------------------- */
+.team-colors-TSM {
+    background: linear-gradient(to bottom, $tsm-primary 0%, $tsm-secondary 100%)
+}
+.team-colors-FOX {
+    background: linear-gradient(to bottom, $fox-primary 0%, $fox-secondary 100%)
+}
+.team-colors-OPT {
+    background: linear-gradient(to bottom, $opt-primary 0%, $opt-secondary 100%)
+}
+.team-colors-100 {
+    background: linear-gradient(to bottom, $t100-primary 0%, $t100-secondary 100%)
+}
+.team-colors-TL {
+    background: linear-gradient(to bottom, $tl-primary 0%, $tl-secondary 100%)
+}
+.team-colors-CG {
+    background: linear-gradient(to bottom, $cg-primary 0%, $cg-secondary 100%)
+}
+.team-colors-CLG {
+    background: linear-gradient(to bottom, $clg-primary 0%, $clg-secondary 100%)
+}
+.team-colors-C9 {
+    background: linear-gradient(to bottom, $c9-primary 0%, $c9-secondary 100%)
+}
+.team-colors-FLY {
+    background: linear-gradient(to bottom, $fly-primary 0%, $fly-secondary 100%)
+}
+.team-colors-GGS {
+    background: linear-gradient(to bottom, $ggs-primary 0%, $ggs-secondary 100%)
+}
+.team-colors-RET, .team-colors-FA {
+    background: linear-gradient(to bottom, rgb(51, 51, 51) 0%, #131313 84%, #131313 100%);
+}
+
 .player-twitch {
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 12px;
+    z-index: 5;
 }
 .player-name {
     position: relative;
@@ -100,26 +135,30 @@ select {
     font-weight: 700;
     margin-top: 5px;
     letter-spacing: 3px;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-shadow: 2px 2px black;
 }
 .player-info {
     position: relative;
     max-width: 70px;
     z-index: 3;
+    margin-top: 6px;
 }
 .player-box {
+    display: inline-block;
+    width: 250px;
     position: relative;
-    border: 3px solid #1f1f1f;
-    // background: #383838;
-    // url('https://i.pinimg.com/originals/d6/aa/40/d6aa404338a0dc32e8f65b6a80a8aa46.jpg')
+    // border: 3px solid #1f1f1f;
+    padding-left: 10px;
+    padding-right: 5px;
     border-radius: 1em;
     margin: 1em;
-    background: linear-gradient(to bottom, rgb(51, 51, 51) 0%, #131313 84%, #131313 100%);
 }
 .info-title {
     margin-top: 0;
-    color: #8a8a8a;
+    text-shadow: 2px 2px black;
+    // color: #8a8a8a;
+    color: white;
     font-size: 1.6em;
 }
 .info-content {
@@ -143,7 +182,7 @@ select {
     width: 110px;
     position: absolute;
     right: 2px;
-    top: 20px;
+    top: 29px;
     z-index: 1;
 }
 

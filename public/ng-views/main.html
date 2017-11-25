@@ -37,8 +37,8 @@
 
 <section class="player-section container-fluid">
     <div class="row">
-        <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: { team: { region_id: { id: filter.region }}} | filter: { team: { id: filter.team }} | filter: { position: { id: filter.position }} | filter: search" class="player-box text-center col-md-2">
-            <a href="https://twitch.tv/[[streamer.twitch_username]]" class="player-twitch pointer"><i class="fab fa-twitch"></i></a>
+        <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: { team: { region_id: { id: filter.region }}} | filter: { team: { id: filter.team }} | filter: { position: { id: filter.position }} | filter: search" class="player-box text-center team-colors-[[streamer.team.acronym]]">
+            <a href="https://twitch.tv/[[streamer.twitch_username]]" class="player-twitch pointer"><i class="fab fa-twitch fa-2x"></i></a>
             
             <h2 class="player-name">[[streamer.handle]]</h2>
    
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="player-img-container">
-                <a href="https://twitch.tv/[[streamer.twitch_username]]" class="pointer"><img class="player-img" ng-src="[[streamer.image]]" /></a>
+                <img class="player-img" ng-src="[[streamer.image]]" />
             </div>
             <img class="team-logo" ng-src="[[streamer.team.logo]]" />
             <div class="online-light" tooltip-placement="left" ng-show="streamer.online == 1" uib-tooltip="Online now!">
