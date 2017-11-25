@@ -92,6 +92,8 @@ select {
     left: 5px;
 }
 .player-name {
+    position: relative;
+    z-index: 2;
     font-size: 2em;
     margin-bottom: 0;
     font-family: 'Teko', sans-serif;
@@ -209,7 +211,7 @@ select {
     z-index: 2;
     opacity: 0;
 }
-@-moz-keyframes "pulse" {
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(0);
         opacity: 0.0;
@@ -232,7 +234,7 @@ select {
     }
 }
 
-@-webkit-keyframes "pulse" {
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(0);
         opacity: 0.0;

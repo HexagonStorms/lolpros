@@ -13,7 +13,7 @@ class MainController extends Controller
         $i = 0;
         $limiter = 100;
         $list = '?';
-        $players = Player::with('team')->get();
+        $players = Player::with('team')->where('twitch_user_id', '!=', '')->get();
         $count = $players->count();
         
         foreach($players as $player) {
