@@ -9,8 +9,10 @@ app.config(function($routeProvider) {
     .otherwise({
         redirectTo: '/'
     });
-});
-
+})
+.config(function($locationProvider) {
+   $locationProvider.html5Mode(true); 
+})
 app.controller('appCtrl', function(mainFactory, $scope) {
 	$scope.activeCount = 0;
     
