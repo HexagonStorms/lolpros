@@ -3,11 +3,6 @@
     <div class="row text-center">
         <h2 class="slogan">[[activeStreamers.length]] Pro League of Legends Players Currently Streaming</h2>
     </div>
-    <div class="row text-center">
-        <div class="search-container col-md-5 center-block">
-            <input type="text" placeholder="Search by name, team, or region..." class="search-box" ng-model="query">
-        </div>
-    </div>
     <div class="row text-center select-container">
         <div class="col-md-3 filter-select-container">
             <select class="filter-select" ng-model="filter.status">
@@ -39,9 +34,9 @@
     <div class="row">
         <div ng-repeat="streamer in players | filter: { online: filter.status } | filter: { team: { region_id: { id: filter.region }}} | filter: { team: { id: filter.team }} | filter: { position: { id: filter.position }} | filter: search" class="player-box text-center team-colors-[[streamer.team.acronym]]">
             <a href="https://twitch.tv/[[streamer.twitch_username]]" class="player-twitch pointer"><i class="fab fa-twitch fa-2x"></i></a>
-            
+
             <h2 class="player-name">[[streamer.handle]]</h2>
-   
+
             <div class="player-info text-left">
                 <div class="row">
                     <div class="col-md-12">

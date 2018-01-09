@@ -14,9 +14,14 @@
     </head>
     <body ng-app="myApp" ng-controller="appCtrl">
         <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
+            <div class="container-fluid pro-navbar">
                 <div class="navbar-header">
                     <a href="#" class="navbar-brand">PROPLAYERS.ONLINE</a>
+                </div>
+                <div class="row">
+                    <div class="search-container col-md-3 center-block">
+                        <input type="text" placeholder="Search by name, team, or region..." class="search-box" ng-model="query">
+                    </div>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav teko">
@@ -26,9 +31,9 @@
                 </div>
             </div>
         </nav>
-        
+
         <div ng-view></div>
-        
+
         <footer>
             <!-- footer -->
         </footer>

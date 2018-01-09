@@ -4,7 +4,7 @@
 /* ----------------------------------------------------------------- */
 /* GLOBAL */
 /* ----------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, input, select, .navbar-brand {
+h1, h2, h3, h4, h5, h6, .navbar-brand {
     font-family: 'Teko', sans-serif;
     font-weight: 400;
 }
@@ -44,6 +44,9 @@ a {
 //   color: white;
 //   padding-top: 30px;
 // }
+.pro-navbar {
+  margin-top: 15px;
+}
 .navbar {
     height: 80px;
     margin-bottom: 0;
@@ -63,13 +66,20 @@ a {
     text-shadow: 2px 2px $twitch-color;
 }
 .search-container {
-    padding: 3em;
+  margin-top: 5px;
+    // padding: 3em;
     float: none;
 }
 .search-box {
-    color: black;
+  color: $grey;
     width: 100%;
-    padding: 3px;
+    padding: 3px 10px;
+    background-color: black;
+    border-radius: 1em;
+    border: 0;
+    &:focus {
+      outline: none;
+    }
 }
 .select-container {
     margin-top: 2em;
