@@ -23,16 +23,25 @@
                         <input type="text" placeholder="Search by name, team, or region..." class="search-box" ng-model="query">
                     </div>
                 </div>
-                <div class="collapse navbar-collapse">
+                <!-- <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav teko">
                         <li class="nav-link"><a href="#!/about">F.A.Q.</a></li>
-                        <!-- <li><a href="/submit">Submit A Player</a></li> -->
+                        <li><a href="/submit">Submit A Player</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </nav>
 
-        <div ng-view></div>
+        <div>
+            <section class="sidenav">
+                <p>
+                    This is a sidebar!
+                </p>
+            </section>
+            <section class="main-content" ng-view>
+
+            </section>
+        </div>
 
         <footer>
             <!-- footer -->
